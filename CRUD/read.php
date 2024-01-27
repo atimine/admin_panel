@@ -20,5 +20,6 @@ $sql=$conn->prepare("SELECT *FROM `users`");
 $sql->execute();
 $result=$sql->fetchall();
 $jsonbek=json_encode($result);
-echo "<script>var jsonbek = '$jsonbek';</script>";
+echo "<script>var jsonbek = '$jsonbek'</script>";
+echo "kkkkkkk";
 // print_r($jsonbek);
