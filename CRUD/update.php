@@ -1,0 +1,2 @@
+<?
+include "connect.php";
