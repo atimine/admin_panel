@@ -1,10 +1,5 @@
 
-var data = [
-    { id: 1, name: "John", surname: "Johnbek", email: "john@example.com", password: "123admin" },
-    { id: 2, name: "Jane", surname: "Janejon", email: "jane@example.com", password: "123admin" },
-    { id: 3, name: "Doe", surname: "Doebek", email: "doe@example.com", password: "123admin" },
-    { id: 4, name: "Doe4", surname: "Doe4bek", email: "doe4@example.com", password: "1234admin" }
-  ];
+var data
   
   function addRow(rowData) {
     var table = document.getElementById("myTable");
