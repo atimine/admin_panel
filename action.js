@@ -1,26 +1,3 @@
-// script.js
-
-// Malumotlarni olish uchun XMLHttpRequest obyektini yaratamiz
-var xhr = new XMLHttpRequest();
-
-// Serverga so'rov jo'natish usuli va URL ni belgilaymiz
-xhr.open('GET', 'read.php', true);
-
-// Serverdan javobni kutib turish va uni qabul qilish uchun funksiya
-xhr.onload = function () {
-  // Agar so'rov muvaffaqiyatli bajarilsa
-  if (xhr.status >= 200 && xhr.status < 300) {
-    // Malumotlarni JavaScript obyektiga o'zlashtiramiz
-    var data = JSON.parse(xhr.responseText);
-    console.log(data);
-  } else {
-    console.error('Request failed with status', xhr.status);
-  }
-};
-
-// So'rovnoma yuborish
-xhr.send();
-
 
 var data = [
     { id: 1, name: "John", surname: "Johnbek", email: "john@example.com", password: "123admin" },
